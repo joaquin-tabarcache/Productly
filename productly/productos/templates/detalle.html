@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="card" style="width: 18rem;">
+    <div class="card-header">
+        {{producto.nombre}}
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{ producto.categoria }}</li>
+        <li class="list-group-item">{{ producto.stock }}</li>
+        <li class="list-group-item">{{ producto.puntaje }}</li>
+        <li class="list-group-item">{{ producto.creado_en }}</li>
+    </ul>
+</div>
+{% endblock %}
+
+
+<!--el div con los <h> y <p> se pued hacer con div>h6+p*4--> 
+    
+    <!--<div>
+        <h6>{{ producto.nombre }}</h6>
+        <p>{{ producto.categoria }}</p>
+        <p>{{ producto.stock }}</p>
+        <p>{{ producto.puntaje }}</p>
+        <p>{{ producto.creado_en }}</p>
+    </div>-->
